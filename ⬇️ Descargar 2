@@ -1,0 +1,56 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #b03b77;
+}
+
+#malla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+.ramo {
+    border-radius: 15px;
+    padding: 12px 20px;
+    background-color: #f6c1d4;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.ramo:hover {
+    transform: scale(1.05);
+}
+
+.bloqueado {
+    background-color: #d8d8d8;
+    cursor: not-allowed;
+}
+
+.estrellita {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 16px;
+    color: gold;
+    animation: sparkle 1s ease-out forwards;
+}
+
+@keyframes sparkle {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}
